@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins',sans-serif;
+    }
+
+    body{
+      min-height: 100vh;
+      background-color: #FAFAFA;
+    }
+
+    main{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    .grid-table{
+      margin-top: 1rem;
+      height: 440px;
+      width: 1000px;
+      display: grid;
+
+      grid-template-columns:100px 250px 25px 250px 25px 250px 100px;
+      grid-template-rows: 20px 95px 95px 20px 95px 95px 20px;
+    }
+
+    .supervisor{
+      grid-area: 3/2/6/3;
+      border-top: 4px solid #51CDCC;
+      border-radius: 5px;
+      box-shadow: 15px 15px 30px #16395b30;
+      padding: 1rem;
+    }
+
+    .team{
+      grid-area: 1/4/4/5;
+      border-top: 4px solid #EA5551;
+      border-radius: 5px;
+      box-shadow: 15px 15px 30px #16395b30;
+      padding: 1rem;
+    }
+    .cal{
+      grid-area: 3/6/6/7;
+      border-top: 4px solid #76A7E0;
+      border-radius: 5px;
+      box-shadow: 15px 15px 30px #16395b30;
+      padding: 1rem;
+    }
+
+    .karma{
+      grid-area: 5/4/8/5;
+      border-top: 4px solid #FBAD4B;
+      border-radius: 5px;
+      box-shadow: 15px 15px 30px #16395b30;
+      padding: 1rem;
+    }
+
+    h1{
+      color: #505160;
+      font-family: 'Poppins',sans-serif;
+      font-size: 24px;
+    }
+
+    p{
+      color: #B3B3B5;
+      font-size: 12px;
+    }
+
+    img{
+      position: relative;
+      object-fit: none;
+      object-position: center;
+      padding: 2rem 0 0 9rem;
+    }
+
+    .info{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 400px;
+ }
+    .info > h1 {
+      font-size: 25px;
+      margin: 10px 0 10px 0;
+    }
+    em{
+      font-style: normal;
+      font-weight: 200;
+    }
+
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="info">
+      <h1><em>Reliable, efficient delivery</em>
+        Powered by Technology</h1>
+    
+      <p>Our Artificial Intelligence powered tools use millions of project data points 
+        to ensure that your project is successful</p>
+    </div>
+ 
+    <div class="grid-table">
+      <div class="supervisor">
+        <h1>Supervisor</h1>
+        <p>Monitors activity to identify project roadblocks</p>
+        <img src="images/icon-supervisor.svg">
+      </div>
+      <div class="team">
+        <h1>Team Builder</h1>
+        <p>Scans our talent network to create the optimal team for your project
+        </p>
+        <img src="images/icon-team-builder.svg">
+      </div>
+      <div class="karma">
+        <h1>Karma</h1>
+        <p>Regularly evaluates our talent to ensure quality
+        </p>
+        <img src="images/icon-karma.svg">
+      </div>
+      <div class="cal">
+        <h1>Calculator</h1>
+        <p>Uses data from past projects to provide better delivery estimates
+          <img src="images/icon-calculator.svg">
+        </div></p>
+        
+     
+    </div>
+    
+  </main>
+ 
+</body>
+</html>
